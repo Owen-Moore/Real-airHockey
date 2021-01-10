@@ -126,7 +126,9 @@ namespace airHockey
             }
 
         }
-
+        //My code doesn't work and i'm not sure why. When I started the project i did take your game engine (which probably won't raise my marks any)
+        //But in my Designer it says that GameTimer is never referenced and to me it looks like GameTimer is referenced so i'm not sure whats wrong with it.
+        //Now the program won't run but I had it running before on your cloned repository that I changed.
         private void GameTimer_Tick(object sender, EventArgs e)
         {
 

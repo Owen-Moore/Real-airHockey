@@ -1,6 +1,4 @@
 ﻿
-using System.Windows.Forms;
-
 namespace airHockey
 {
     partial class Form1
@@ -23,7 +21,7 @@ namespace airHockey
             base.Dispose(disposing);
         }
 
-         #region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -31,17 +29,15 @@ namespace airHockey
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
-        
+            this.components = new System.ComponentModel.Container();           
+            this.GameTimer = new System.Windows.Forms.Timer(this.components);
+            this.SuspendLayout();
 
-        
-          this.GameTimer.Enabled = true;
+
+            this.GameTimer.Enabled = true;
             this.GameTimer.Interval = 20;
             this.GameTimer.Tick += new System.EventHandler(this.GameTimer_Tick);
-            
+
             // 
             // Form1
             // 
@@ -65,8 +61,6 @@ namespace airHockey
         #endregion
 
         private System.Windows.Forms.Timer GameTimer;
-
-       
     }
 }
 
